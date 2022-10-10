@@ -1,73 +1,84 @@
-body,html{
+body,
+html {
     background-color: rgb(7, 20, 77);
 }
-.one{
+
+.one {
     border-right-style: solid;
     border-bottom-style: solid;
 }
-.two{
-    border-right-style: solid;
-    border-left-style : solid;
-    border-bottom-style:solid; 
-}
-.three{
-    border-left-style : solid;
-    border-bottom-style:solid; 
 
+.two {
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
 }
-.four{
-    border-top-style: solid;
-    border-right-style : solid;
-    border-bottom-style:solid; 
+
+.three {
+    border-left-style: solid;
+    border-bottom-style: solid;
 }
-.five{
+
+.four {
     border-top-style: solid;
     border-right-style: solid;
-    border-left-style : solid;
-    border-bottom-style:solid; 
+    border-bottom-style: solid;
 }
-.six{
+
+.five {
     border-top-style: solid;
-    border-left-style : solid;
-    border-bottom-style:solid; 
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
 }
-.seven{
-    border-top-style: solid;
-    border-right-style : solid; 
-}
-.eight{
+
+.six {
     border-top-style: solid;
     border-left-style: solid;
-    border-right-style : solid; 
+    border-bottom-style: solid;
 }
-.nine{
+
+.seven {
     border-top-style: solid;
-    border-left-style : solid; 
+    border-right-style: solid;
 }
-.one,.two,.three,.four,.five,.six,.seven,.eight,.nine{
-  border-color: rgb(255, 255, 255);
-  border-width: 4px;
-  border-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%) 1;
+
+.eight {
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
 }
-.tablelh{
-    position:relative;
+
+.nine {
+    border-top-style: solid;
+    border-left-style: solid;
+}
+
+.tablelh {
+    position: relative;
     min-height: 85px;
     min-width: 90px;
     font-size: 55px;
     font-weight: bold;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: transparent;
     transition: .3s ease-in-out all;
-    
-    
 }
 
 @keyframes winanimation {
-    from {color:'transparent';text-shadow: none;}
-    to {color: rgb(17, 33, 255);text-shadow: none;transition: .2s ease-out;font-size: 52px;}
-  }
+    from {
+        color: 'transparent';
+        text-shadow: none;
+    }
+    to {
+        color: rgb(17, 33, 255);
+        text-shadow: none;
+        transition: .2s ease-out;
+        font-size: 52px;
+    }
+}
 
-.player{
+.player {
     border-bottom: 2px solid rgb(8, 61, 233);
     border-radius: 10px;
     text-align: left;
@@ -79,14 +90,20 @@ body,html{
 }
 
 button:disabled,
-button[disabled]{
-  color: #fff;
+button[disabled] {
+    color: #fff;
 }
 
-canvas{
+canvas {
     position: absolute;
     display: inline-block;
     top: 0;
     left: 0;
 }
 
+.overwrite {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
